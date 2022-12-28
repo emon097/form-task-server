@@ -60,7 +60,6 @@ try {
         select: user.select,
       },
     };
-    console.log(updatedUser);
     const result = await employee.updateOne(filter, updatedUser, option);
     res.send(result);
   });
